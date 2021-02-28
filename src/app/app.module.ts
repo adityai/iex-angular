@@ -3,16 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { IexQuoteComponentComponent } from './iex-quote-component/iex-quote-component.component';
+import { IexQuoteService } from './iex-quote.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    IexQuoteComponentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [IexQuoteService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
